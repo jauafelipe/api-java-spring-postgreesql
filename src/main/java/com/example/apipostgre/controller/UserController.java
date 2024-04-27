@@ -31,7 +31,7 @@ public class UserController {
     @PostMapping("create-user")
     public ResponseEntity createUser(@RequestBody UserEntityDto user) {
 
-        RequestObjectErrors errors = new RequestObjectErrors("Campos null");
+        RequestObjectErrors errors = new RequestObjectErrors("preencha todos os campos");
 
         if (user.getName().isEmpty() ||
                 user.getSurname().isEmpty() ||
