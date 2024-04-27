@@ -26,9 +26,8 @@ public class UserService {
         usersEntity.setSurname(userDto.getSurname());
         usersEntity.setEmail(userDto.getEmail());
         usersEntity.setPassword(userDto.getPassword());
+        
         UsersEntity createNewUser = this._repository.save(usersEntity);
         return createNewUser;
-
-
     }
 }
